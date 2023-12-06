@@ -1,0 +1,8 @@
+
+services:
+  CorsProxy:
+    container_name: cors-proxy
+    image: imjacobclark/cors-container
+    restart: unless-stopped
+    ports:
+      - 2000:3000
